@@ -192,6 +192,20 @@ i.fa-bars, i.fa-times{
 	overflow: hidden;
 }
 
+/* SERVICES PAGE*/
+.services {
+	margin-top: 40px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 40px;
+} 
+
+
+.icon img{
+	height: 150px;
+	width: 240px;
+} 
+
 @media (max-width: 1068px) {
 
 	.home-img{
