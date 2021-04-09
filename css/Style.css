@@ -306,4 +306,10 @@ i.fa-bars, i.fa-times{
 	.services {
 		grid-template-columns: 1fr;
 	}	
+
+	.services .service:hover{
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
+
+}
+
