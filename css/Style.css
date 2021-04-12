@@ -269,6 +269,60 @@ i.fa-bars, i.fa-times{
 	opacity: 1;
 }
 
+/* Ccontact */
+
+.contact {
+position: relative;
+width: 100%;
+margin-top: 50px;
+display: flex;
+justify-content: space-between;
+align-items: flex-start;
+}
+
+.contact-form {
+	position: relative;
+	background: #f9f9f9;
+	width: calc(100% - 400px);
+	padding: 60px 40px 20px;
+
+}
+
+.contact-form form {
+	width: 100%;
+}
+
+.contact-form .row {
+	width: 100%;
+	display: flex;
+}
+
+.contact-form .input50{
+	width: 50%;
+	margin: 0 10px;
+}
+
+
+.contact-form .input100{
+	width: 50%;
+	margin: 0 10px;
+}
+
+.contact-form .row input,
+.contact-form .row textarea {
+	position: relative;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	color: #111;
+	background-color: transparent;
+	width: 100%;
+	padding: 10px;
+	outline: none;
+	font-size: 16px;
+	font-weight: 300;
+	margin: 10px 0;
+	resize: none;
+
+}
 
 .icon img{
 	height: 150px;
