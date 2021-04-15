@@ -290,22 +290,23 @@ i.fa-bars, i.fa-times{
 
 .contact-form form {
 	width: 100%;
+
 }
 
 .contact-form .row {
 	width: 100%;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 }
 
 .contact-form .input50{
-	width: 40%;
+	width: 90%;
 	margin: 0 10px;
 }
 
 
 .contact-form .input100{
-	width: 80%;
+	width: 90%;
 	margin: 0 10px;
 }
 
@@ -315,7 +316,7 @@ i.fa-bars, i.fa-times{
 	border: 1px solid gray;
 	color: black;
 	background-color: transparent;
-	width: 100%;
+	width: 90%;
 	padding: 10px;
 	outline: none;
 	font-size: 16px;
@@ -361,6 +362,11 @@ i.fa-bars, i.fa-times{
 	color: var(--primary-color);
 }
 
+contact-info .info-box .detalhes p,
+contact-info .info-box .detalhes a {
+	color: ;
+}
+
 .icon img{
 	height: 150px;
 	width: 240px;
@@ -391,6 +397,17 @@ i.fa-bars, i.fa-times{
 	.services {
 		grid-template-columns: repeat(2, 1fr);
 	}
+
+	.contact {
+		flex-direction: column;
+	}
+
+	.contact-form{
+		width: 80%;
+		padding: 30px 30px 20px;
+	}
+
+
 }
 
 @media (max-width: 600px) {
@@ -400,7 +417,32 @@ i.fa-bars, i.fa-times{
 
 	.services .service:hover{
 	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-}
+	}
+
+	.contact {
+		flex-direction: column;
+	}
+
+	.contact-form{
+		width: 90%;
+		padding: 30px 30px 20px;
+	}
+	.contact-form .row {
+		flex-direction: column;
+	}
+
+	.contact-form .input50,
+	.contact-form .input100{
+		width: 95%;
+		margin: 0;
+	}
+
+
+	.contact-info{
+		width: 90%;
+		margin-top: 20px;
+		padding: 30px 30px 20px;
+	}
 
 }
 
