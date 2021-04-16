@@ -81,19 +81,20 @@ section.home {
 	position: fixed;
 	top: 0;
 	right: 0;
-	width: 60px;
-	height: 60px;
 	z-index: 20;
 	cursor: pointer;
-	background: var(--primary-color);
+	justify-content: center;
+	/* background: var(--primary-color); */
 }
 
-i.fa-bars, i.fa-times{
+#icon_nav{
+	width: 45px;
+	height: 45px;
 	padding:6px 0px 0px 10px;
+	font-size: 35px;
 	margin: 0;
-	font-size: 45px;
 	color: #f5ce29;
-	background: var(--primary-color);
+	background:var(--primary-color);
 	display: flex;
 	z-index: 20;
 }
