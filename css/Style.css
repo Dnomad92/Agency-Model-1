@@ -1,4 +1,5 @@
 @import url('');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
 
 :root{
 	--primary-color: #700b00;
@@ -15,11 +16,12 @@
 html, body{
 
 	background: #faf6f0;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	color: #111;
 }
 
 h1{
+	max-width:70% ;
 	font-size: 30px;
 	font-weight: 500;
 }
@@ -27,7 +29,7 @@ h1{
 p{
 	margin: 20px 0 10px;
 	font-size: 1.1rem;
-	width: 80%;
+	max-width: 100%;
 }
 
 section{
@@ -40,7 +42,7 @@ section{
 
 }
 
-section.home {
+#home{
 	flex-direction:row;
 }
 
@@ -171,6 +173,7 @@ section.home {
 .home-content{
 	top: 15%;
 	position: relative;
+	margin-left: 0;
 	z-index: 5;
 	max-width: 65%;
 	
@@ -194,13 +197,21 @@ section.home {
 }
 
 /* SERVICES PAGE*/
+.title { 
+	margin-top: 15%;
+	max-width: 85%;
+	
+}
+
 .services {
-	margin-top: 40px;
+	margin-top: 5px;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 20px;
 	text-align: center ;
 } 
+
+
 .services p{
 	width: 100% ;
 }
@@ -210,7 +221,7 @@ section.home {
 }
 
 .services .service:hover{
-	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 10px 30px rgba(112, 12, 0, .5);
 }
 
 .services .service h2{
@@ -236,7 +247,7 @@ section.home {
 	position: relative;
 	width: 250px;
 	height: 250px;
-	margin-bottom: 5px;
+	margin: 2.5px;
 }
 
 .portfolio .item img{
@@ -284,31 +295,40 @@ section.home {
 .contact-form {
 	position: relative;
 	background: rgba(227, 140, 130, 0.1);
-	width: calc(100% - 500px);
-	padding: 60px 40px 20px;
+	width: 60%;
+	/* padding: 60px 40px 20px; */
 
 }
 
 .contact-form form {
 	width: 100%;
+	margin: 0;
+	display: flex;
+	/* align-content: flex-start; */
 
 }
 
 .contact-form .row {
 	width: 100%;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
+	/* align-content: space-around; */
+	flex-wrap: wrap;
+	margin: -10px 0 0 -10px;
 }
 
 .contact-form .input50{
-	width: 90%;
-	margin: 0 10px;
+	width: 45%;
+	/* margin: 0 10px; */
+	display: inline-block;
+	justify-content: space-between;
 }
 
 
 .contact-form .input100{
-	width: 90%;
+	width: 100%;
 	margin: 0 10px;
+	display: inline-block;
 }
 
 .contact-form .row input,
@@ -322,8 +342,9 @@ section.home {
 	outline: none;
 	font-size: 16px;
 	font-weight: 300;
-	margin: 10px 0;
+	margin: 10px 0 0 10px;
 	resize: none;
+	flex-grow: 1;
 
 }
 
@@ -343,7 +364,7 @@ section.home {
 }
 
 .contact-info {
-	width: 350px;
+	width: 30%;
 	background: rgba(227, 140, 130, 0.1);
 	padding: 60px 20px 20px;
 }
@@ -412,12 +433,25 @@ contact-info .info-box .detalhes a {
 }
 
 @media (max-width: 600px) {
+
+
+	section{
+
+		margin-top: 50px;
+		display: flex;
+		flex-direction: column !important;
+		height: 85vh;
+		align-items: center;
+		padding: 20px;
+	}
+
 	.services {
 		grid-template-columns: 1fr;
+		padding: 5px;
 	}	
 
 	.services .service:hover{
-	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+		box-shadow: 0 10px 30px rgba(112, 12, 0, .2);
 	}
 
 	.contact {
@@ -425,11 +459,13 @@ contact-info .info-box .detalhes a {
 	}
 
 	.contact-form{
-		width: 90%;
+		width: 85%;
 		padding: 30px 30px 20px;
+		
 	}
 	.contact-form .row {
 		flex-direction: column;
+		width: 100%;
 	}
 
 	.contact-form .input50,
@@ -440,7 +476,7 @@ contact-info .info-box .detalhes a {
 
 
 	.contact-info{
-		width: 90%;
+		width: 85%;
 		margin-top: 20px;
 		padding: 30px 30px 20px;
 	}
